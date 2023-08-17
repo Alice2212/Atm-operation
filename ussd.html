@@ -1,0 +1,27 @@
+<script>
+  let balance = 10000;
+  const pin = 1234;
+  choice = Number(
+    prompt(`1. Account Balance
+    2.Airtime
+    3. Transfer`)
+  );
+
+  if (choice === 1) {
+    alert(`Retrieving balance press ok to continue`);
+    alert(`Your account balance is ${balance}`);
+  } else if (choice === 2) {
+    card = Number(prompt(`how much airtime do you want ?`));
+    prompt(`please enter the phone number`);
+    alert(`your airtime recharge of ${card} was successful`);
+    balance = balance - card;
+  } else if (choice === 3) {
+    transfer = Number(prompt(`how much do you want to transfer`));
+    prompt(`enter the account details`);
+    prompt(`enter pin`);
+    alert(`transfer successful
+        your new balance is ${balance = balance - transfer}`);
+  } else {
+    alert("Number not in the option. Please try again ");
+  }
+</script>

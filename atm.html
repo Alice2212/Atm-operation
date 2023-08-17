@@ -1,0 +1,49 @@
+<script>
+  const pin = 1234;
+  let balance = 10000;
+  alert(`welcome, please press ok to continue`);
+  // check for pin
+  userPin = Number(prompt(`please enter your pin`));
+  if (pin !== userPin) {
+    alert(`incorrect pin please try again`);
+  } else {
+    choice = Number(
+      prompt(`1. Account Balance
+    2.Airtime
+    3. Transfer
+    4.Withdrawal`)
+    );
+
+    // account balance
+    if (choice === 1) {
+      alert(`Retrieving balance press ok to continue`);
+      alert(`Your account balance is ${balance}`);
+    }
+    // airtime
+    else if (choice === 2) {
+      card = Number(prompt(`how much airtime do you want ?`));
+      prompt(`please enter the phone number`);
+      alert(`your airtime recharge of ${card} was successful
+        and you new balance is ${balance = balance - card} `);
+    }
+    // transfer
+    else if (choice === 3) {
+      transfer = Number(prompt(`how much do you want to transfer`));
+      prompt(`enter the account details`);
+      prompt(`enter pin`);
+      alert(`transfer successful
+        your new balance is ${balance = balance - transfer}`);
+    }
+    // withdrawal
+    else if (choice === 4) {
+      withdraw = Number(prompt(`how much do you want to withdraw`));
+      alert(`please wait while your transaction is processing...`);
+      alert(`please take your cash`);
+      alert(`you have successful withdraw
+        your new balance is ${balance = balance - transfer}`);
+    }else {
+        alert ('Number not in the option. Please try again ')
+    }
+    
+  }
+</script>
